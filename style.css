@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    background: linear-gradient(180deg, #87CEEB 0%, #90EE90 50%, #228B22 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.invitacion {
+    background: #fffef0;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0,70,20,0.35);
+    max-width: 460px;
+    width: 100%;
+    padding: 40px 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 6px solid #4a7c23;
+}
+
+.invitacion::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 10px;
+    background: repeating-linear-gradient(90deg, #f5a623, #f5a623 20px, #7ed321 20px, #7ed321 40px);
+}
+
+.decoracion {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    font-size: 38px;
+}
+
+.saludo {
+    font-family: 'Bangers', cursive;
+    font-size: 22px;
+    color: #e67e22;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.titulo {
+    font-family: 'Bangers', cursive;
+    font-size: 42px;
+    color: #2c3e50;
+    margin-bottom: 6px;
+    text-shadow: 3px 3px 0 #f1c40f;
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    color: #5d6d7e;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.cumpleanero {
+    font-size: 18px;
+    color: #27ae60;
+    margin-bottom: 25px;
+}
+
+.detalles {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.dato {
+    padding: 12px;
+    background: #e8f5e9;
+    border-radius: 12px;
+    border-left: 5px solid #4caf50;
+}
+
+.etiqueta {
+    font-weight: bold;
+    color: #d35400;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 28px 0;
+}
+
+.bloque {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: #fff;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.bloque span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bloque small {
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+.botones-principales {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.boton {
+    border: none;
+    padding: 13px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.ubicacion {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    color: #fff;
+}
+
+.regalos {
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+    color: #fff;
+}
+
+.confirmar {
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    color: #fff;
+    margin-top: 8px;
+}
+
+.agradecimiento {
+    margin-top: 25px;
+    color: #8d6e63;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+@media (max-width: 400px) {
+    .bloque {
+        width: 60px;
+        height: 60px;
+    }
+    .bloque span { font-size: 17px; }
+    .titulo { font-size: 34px; }
+}
