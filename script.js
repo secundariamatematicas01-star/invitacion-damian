@@ -1,5 +1,5 @@
 // === CONFIGURA AQUÍ LOS DATOS DE TU EVENTO ===
-const fechaEvento = new Date("2026-12-20T16:00:00"); // AÑO-MES-DÍAThh:mm:ss
+const fechaEvento = new Date("2026-10-04T15:00:00"); // AÑO-MES-DÍAThh:mm:ss
 
 function actualizarContador() {
     const ahora = new Date();
